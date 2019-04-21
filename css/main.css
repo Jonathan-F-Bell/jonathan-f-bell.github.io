@@ -1,0 +1,135 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+#content {
+  padding-left: 5vw;
+  padding-right: 5vw;
+  padding-top: 8vh;
+  padding-bottom: 5vw;
+  height: 100vh;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+h1.home-main-header {
+  font-weight: 800;
+  font-size: 18vw;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+a.home-email {
+  font-size: 4vw;
+}
+
+h6.home-subitem {
+  font-weight: 400;
+  font-size: 9vw;
+  margin-top: 4vh;
+  margin-bottom: 4vh;
+}
+
+.home-nav-items {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 20vh;
+}
+
+.home-nav-items div {
+  font-size: 7vw;
+  font-weight: 800;
+  position: absolute;
+}
+
+.home-nav-items img {
+  height: 6vw;
+  position: relative;
+  top: 0.5vw;
+}
+
+.resume-nav-button {
+  right: 4vw;
+}
+
+.portfolio-nav-button {
+  left: 50%;
+  transform: translate(-50%, 0);
+  bottom: 2vw;
+  text-align: center;
+}
+
+.portfolio-nav-button img {
+  transform: rotate(90deg);
+}
+
+.color-buttons {
+  position: absolute;
+  left: 5px;
+  bottom: 5px;
+}
+
+.circle-button {
+  border-radius: 100%;
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+}
+
+#dark-mode-button {
+  background-color: #000000;
+  border: 4px solid #ffffff;
+}
+
+#med-mode-button {
+  background-color: #151F27;
+  border: 4px solid #000000;
+}
+
+#light-mode-button {
+  background-color: #ffffff;
+  border: 4px solid #000000;
+}
+
+/* Portfolio CSS */
+#portfolio {
+  margin-top: 8vw;
+}
+
+.portfolio-container {
+  border-left: 4px solid #ffffff;
+  margin-left: 5vw;
+  margin-right: 3vw;
+}
+
+.portfolio-item {
+  padding-left: 4vw;
+}
+
+.portfolio-dot {
+  position: absolute;
+  width: 6vw;
+  height: 6vw;
+  border: 4px solid #ffffff;
+  border-radius: 50%;
+  background-color: #000000;
+  /* Moves object to the left by half it's width to center,
+  minus the width of the margin
+  minus half the width of the border line it needs to be centered on */
+  transform: translate(calc(-50% - 4vw - 2px), 0);
+}
+
+#portfolio h2 {
+  font-weight: 400;
+  font-size: 7vw;
+  /*align porfolio title with dot*/
+  transform: translate(0, -15%);
+}

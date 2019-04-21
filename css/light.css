@@ -1,0 +1,7 @@
+body.light_theme {
+  background-color: #ffffff;
+}
+
+.light_theme p, .light_theme a, .light_theme h1, .light_theme h2, .light_theme h3, .light_theme h4, .light_theme h5, .light_theme h6, .light_theme span {
+  color: #000000;
+}
