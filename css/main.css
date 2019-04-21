@@ -16,8 +16,8 @@ body {
   padding-left: 5vw;
   padding-right: 5vw;
   padding-top: 8vh;
-  padding-bottom: 5vw;
-  height: 100%;
+  padding-bottom: 30vw;
+  min-height: 100%;
   position: relative;
   top: 0;
   left: 0;
@@ -47,6 +47,7 @@ h6.home-subitem {
   bottom: 0;
   width: 100%;
   height: 20vh;
+  min-height: 30vw;
 }
 
 .home-nav-items div {
@@ -142,4 +143,5 @@ h6.home-subitem {
 
 .portfolio-item img {
   width: 100%;
+  border-radius: 5px;
 }
