@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="css/main.css">
@@ -37,6 +37,8 @@
         <div class="portfolio-item">
           <div class="portfolio-dot"></div>
           <h2>Portfolio Item 1</h2>
+          <img class="b-lazy" src="img/placeholder/placeholder_pep_site_header.png"
+          data-src="full_size_img/pep_site_header.png" alt="Pep band website header screenshot">
           <p>Info about portfolio item 1</p>
         </div>
       </div>
@@ -50,5 +52,13 @@
 
     </div>
   </body>
+
+  <script src="js/blazy.min.js"></script>
+    <script>
+        ;(function() {
+            // Initialize
+            var bLazy = new Blazy();
+        })();
+    </script>
 
 </html>

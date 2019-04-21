@@ -112,6 +112,7 @@ h6.home-subitem {
 
 .portfolio-item {
   padding-left: 4vw;
+  padding-right: 4vw;
 }
 
 .portfolio-dot {
@@ -132,4 +133,8 @@ h6.home-subitem {
   font-size: 7vw;
   /*align porfolio title with dot*/
   transform: translate(0, -15%);
+}
+
+.portfolio-item img {
+  width: 100%;
 }
