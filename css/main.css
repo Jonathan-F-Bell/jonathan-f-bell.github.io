@@ -13,6 +13,9 @@ body {
   padding-top: 8vh;
   padding-bottom: 5vw;
   height: 100vh;
+  height: -moz-available;
+  height: -webkit-fill-available;
+  height: fill-available;
   position: relative;
   top: 0;
   left: 0;
