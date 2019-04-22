@@ -1,0 +1,35 @@
+@media screen and (min-width: 1000px) {
+  #content {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  h1.home-main-header {
+    font-size: 11vw;
+    margin-bottom: -2vw;
+  }
+
+  a.home-email {
+    font-size: 1.5vw;
+  }
+
+  h6.home-subitem {
+    font-size: 3.5vw;
+  }
+
+  .home-nav-items div {
+    font-size: 22px;
+  }
+
+  .home-nav-items img {
+    height: 1.8vw;
+  }
+
+  .resume-nav-button {
+    right: 10px;
+  }
+
+  .portfolio-nav-button {
+    bottom: 10px;
+  }
+}

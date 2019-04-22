@@ -1,0 +1,43 @@
+@media screen and (min-width: 600px) {
+
+  #content {
+    padding-bottom: 8vw;
+  }
+
+  h1.home-main-header {
+    font-size: 12vw;
+    margin-bottom: -2vw;
+  }
+
+  a.home-email {
+    font-size: 2vw;
+  }
+
+  h6.home-subitem {
+    font-size: 6vw;
+  }
+
+  .home-nav-items {
+    top: 50%;
+    bottom: auto;
+    height: 50%;
+    min-height: auto;
+  }
+
+  .home-nav-items div {
+    font-size: 3vw;
+  }
+
+  .home-nav-items img {
+    height: 3vw;
+  }
+
+  .color-buttons {
+    right: 5px;
+    left: auto;
+  }
+
+  .circle-button {
+    float: left;
+  }
+}
