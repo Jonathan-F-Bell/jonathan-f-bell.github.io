@@ -41,6 +41,10 @@
     float: left;
   }
 
+  .portfolio-item {
+    margin-bottom: 100px;
+  }
+
   .portfolio-dot {
     width: 35px;
     height: 35px;
@@ -48,6 +52,7 @@
 
   #portfolio h2 {
     font-size: 2.5em;
+    margin-bottom: 10px;
   }
 
   .portfolio-item img {

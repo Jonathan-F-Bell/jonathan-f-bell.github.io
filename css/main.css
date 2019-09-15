@@ -121,6 +121,7 @@ h6.home-subitem {
   padding-right: 4vw;
   display: flex;
   flex-flow: row wrap;
+  margin-bottom: 10vw;
 }
 
 .portfolio-item > * {
@@ -146,6 +147,7 @@ h6.home-subitem {
   /*align porfolio title with dot*/
   transform: translate(0, -15%);
   margin-top: 0;
+  margin-bottom: 2vw;
 }
 
 .portfolio-item img {
