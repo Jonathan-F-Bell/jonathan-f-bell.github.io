@@ -1,6 +1,8 @@
 * {
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
+  transition: color 0.3s;
+  transition: background-color 0.3s;
 }
 
 html {
@@ -16,6 +18,10 @@ body {
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
+  }
+
+  * {
+    transition: none !important;
   }
 }
 
@@ -99,21 +105,6 @@ h6.home-subitem {
   margin: 5px;
 }
 
-#dark-mode-button {
-  background-color: #000000;
-  border: 4px solid #ffffff;
-}
-
-#med-mode-button {
-  background-color: #151F27;
-  border: 4px solid #000000;
-}
-
-#light-mode-button {
-  background-color: #ffffff;
-  border: 4px solid #000000;
-}
-
 /* Resume Section CSS */
 
 #resume {
@@ -155,7 +146,6 @@ h6.home-subitem {
 }
 
 .portfolio-container {
-  border-left: 4px solid #ffffff;
   margin-left: 5vw;
   margin-right: 3vw;
 }
@@ -176,9 +166,7 @@ h6.home-subitem {
   position: absolute;
   width: 6vw;
   height: 6vw;
-  border: 4px solid #ffffff;
   border-radius: 50%;
-  background-color: #000000;
   /* Moves object to the left by half it's width to center,
   minus the width of the margin
   minus half the width of the border line it needs to be centered on */

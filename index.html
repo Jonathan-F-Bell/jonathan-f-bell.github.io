@@ -92,12 +92,16 @@
     </div>
 
 
-    <div class="color-buttons">
+    <div class="color-buttons" hidden>
       <div class="circle-button" id="dark-mode-button"></div>
       <div class="circle-button" id="med-mode-button"></div>
       <div class="circle-button" id="light-mode-button"></div>
 
     </div>
+    <script>
+      document.querySelector(".color-buttons").hidden = false;
+    </script>
+
   </body>
   <script src="js/main.js"></script>
   <script src="js/blazy.min.js"></script>

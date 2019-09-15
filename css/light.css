@@ -9,3 +9,35 @@ body.light_theme {
 .light_theme p, .light_theme a, .light_theme h1, .light_theme h2, .light_theme h3, .light_theme h4, .light_theme h5, .light_theme h6, .light_theme span {
   color: #000000;
 }
+
+.light_theme #dark-mode-button {
+  background-color: #000000;
+  border: 4px solid #ffffff;
+}
+
+.light_theme #med-mode-button {
+  background-color: #151F27;
+  border: 4px solid #ffffff;
+}
+
+.light_theme #light-mode-button {
+  background-color: #ffffff;
+  border: 4px solid #000000;
+}
+
+.light_theme .portfolio-container {
+  border-left: 4px solid #000000;
+}
+
+.light_theme .portfolio-dot {
+  border: 4px solid #000000;
+  background-color: #ffffff;
+}
+
+.light_theme .home-nav-items img {
+  filter: invert(1);
+}
+
+.light_theme .resume-close-button img {
+  filter: invert(1);
+}
