@@ -143,5 +143,6 @@ h6.home-subitem {
 
 .portfolio-item img {
   width: 100%;
+  max-width: 850px;
   border-radius: 5px;
 }
