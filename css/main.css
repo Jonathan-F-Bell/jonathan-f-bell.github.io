@@ -125,7 +125,7 @@ h6.home-subitem {
   width: 0px;
   transition: width 0.3s;
   overflow: hidden;
-  background-color: #151F27;
+  background-color: #000000;
 }
 
 .resume-close-button {
