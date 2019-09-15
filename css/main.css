@@ -141,6 +141,15 @@ h6.home-subitem {
   transform: rotate(180deg);
 }
 
+.resume-download {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 80vw;
+  text-align: center;
+}
+
 /* Portfolio CSS */
 #portfolio {
   padding-top: 8vw;

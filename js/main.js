@@ -3,6 +3,7 @@ var closeButton = document.querySelector(".resume-close-button a");
 var resumeSection = document.querySelector("#resume");
 var body = document.querySelector("body");
 var links = document.getElementsByTagName("a");
+var resumeLinks = document.querySelectorAll("#resume a");
 var resumeOpen = 0;
 
 
@@ -16,7 +17,9 @@ function toggleResume() {
         for (var i = 0; i < links.length; i++) {
             links[i].tabIndex = -1;
         }
-        closeButton.tabIndex = 0;
+        for (var i = 0; i < resumeLinks.length; i++) {
+            resumeLinks[i].tabIndex = 0;
+        }
         resumeOpen = 1;
     } else {
         body.style.overflowY = "auto";
@@ -24,7 +27,9 @@ function toggleResume() {
         for (var i = 0; i < links.length; i++) {
             links[i].tabIndex = 0;
         }
-        closeButton.tabIndex = -1;
+        for (var i = 0; i < resumeLinks.length; i++) {
+            resumeLinks[i].tabIndex = -1;
+        }
         resumeOpen = 0;
     }
 }
