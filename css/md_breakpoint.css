@@ -41,6 +41,20 @@
     float: left;
   }
 
+  .resume-close-button {
+    font-size: 3vw;
+  }
+
+  .resume-close-button img {
+    height: 3vw;
+  }
+
+  /* Uncomment this if you want different size resume for breakpoint
+  #resume {
+    width: 40%;
+  }
+  */
+
   .portfolio-item {
     margin-bottom: 100px;
   }
