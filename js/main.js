@@ -1,11 +1,9 @@
 var resumeButton = document.querySelector(".resume-nav-button a");
 var closeButton = document.querySelector(".resume-close-button a");
-var contentSection = document.querySelector("#content");
 var resumeSection = document.querySelector("#resume");
 var body = document.querySelector("body");
 var links = document.getElementsByTagName("a");
 var resumeOpen = 0;
-var resumeWidth;
 
 
 resumeButton.addEventListener("click", toggleResume);
@@ -13,10 +11,8 @@ closeButton.addEventListener("click", toggleResume);
 
 function toggleResume() {
     if (resumeOpen == 0) {
-        resumeWidth = resumeSection.offsetWidth;
         body.style.overflowY = "hidden";
-        resumeSection.style.transform = "translate(0 , 0)";
-        contentSection.style.transform = "translate(-" + resumeWidth + "px , 0)";
+        resumeSection.style.width = "100%";
         for (var i = 0; i < links.length; i++) {
             links[i].tabIndex = -1;
         }
@@ -24,8 +20,7 @@ function toggleResume() {
         resumeOpen = 1;
     } else {
         body.style.overflowY = "auto";
-        resumeSection.style.transform = "translate(100%, 0)";
-        contentSection.style.transform = "translate(0 , 0)";
+        resumeSection.style.width = "0px";
         for (var i = 0; i < links.length; i++) {
             links[i].tabIndex = 0;
         }
