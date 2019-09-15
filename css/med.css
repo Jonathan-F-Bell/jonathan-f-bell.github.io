@@ -2,6 +2,10 @@ body.med_theme{
   background-color: #151F27;
 }
 
+.med_theme #resume {
+  background-color: #151F27;
+}
+
 .med_theme p, .med_theme a, .med_theme h1, .med_theme h2, .med_theme h3, .med_theme h4, .med_theme h5, .med_theme h6, .med_theme span {
   color: #ffffff;
 }
