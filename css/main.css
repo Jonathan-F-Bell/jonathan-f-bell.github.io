@@ -185,6 +185,7 @@ h6.home-subitem {
 .portfolio-item img {
   width: 100%;
   max-width: 750px;
+  height: 100%;
   border-radius: 5px;
   margin-bottom: 15px;
 }
