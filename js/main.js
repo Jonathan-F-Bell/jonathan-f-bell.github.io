@@ -2,6 +2,7 @@ var resumeButton = document.querySelector(".resume-nav-button a");
 var closeButton = document.querySelector(".resume-close-button a");
 var resumeSection = document.querySelector("#resume");
 var body = document.querySelector("body");
+var html = document.querySelector("html");
 var links = document.getElementsByTagName("a");
 var resumeLinks = document.querySelectorAll("#resume a");
 var resumeOpen = 0;
@@ -20,7 +21,8 @@ lightButton.addEventListener("click", function() {colorMode(2) });
 
 function toggleResume() {
     if (resumeOpen == 0) {
-        body.style.overflowY = "hidden";
+        body.style.overflow = "hidden";
+        html.style.overflow = "hidden"
         resumeSection.style.width = "100%";
         for (var i = 0; i < links.length; i++) {
             links[i].tabIndex = -1;
@@ -30,7 +32,8 @@ function toggleResume() {
         }
         resumeOpen = 1;
     } else {
-        body.style.overflowY = "auto";
+        body.style.overflow = "";
+        html.style.overflow = "";
         resumeSection.style.width = "0px";
         for (var i = 0; i < links.length; i++) {
             links[i].tabIndex = 0;
