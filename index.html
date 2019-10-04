@@ -22,6 +22,16 @@
   </head>
 
   <body class="">
+    <script>
+
+        var prefersColor = window.matchMedia("(prefers-color-scheme: dark)");
+
+        if (prefersColor.matches){
+          document.querySelector("body").className = "";
+        } else {
+          document.querySelector("body").className = "light_theme";
+        }
+    </script>
     <div id="content">
       <div class="home-main-content">
         <h1 class="home-main-header">Jonathan Bell</h1>

@@ -19,6 +19,8 @@ darkButton.addEventListener("click", function() {colorMode(0) });
 medButton.addEventListener("click", function() {colorMode(1) });
 lightButton.addEventListener("click", function() {colorMode(2) });
 
+prefersColor.addListener(updateColor);
+
 function toggleResume() {
     if (resumeOpen == 0) {
         body.style.overflow = "hidden";
@@ -56,5 +58,13 @@ function colorMode(mode) {
         body.className = "med_theme";
     } else if (mode == 2) {
         body.className = "light_theme";
+    }
+}
+
+function updateColor() {
+    if (prefersColor.matches) {
+        colorMode(0);
+    } else {
+        colorMode(2);
     }
 }
