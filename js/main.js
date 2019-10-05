@@ -63,8 +63,8 @@ function colorMode(mode) {
 
 function updateColor() {
     if (prefersColor.matches) {
-        colorMode(0);
-    } else {
         colorMode(2);
+    } else {
+        colorMode(0);
     }
 }

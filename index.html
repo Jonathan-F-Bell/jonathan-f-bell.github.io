@@ -24,13 +24,17 @@
   <body class="">
     <script>
 
-        var prefersColor = window.matchMedia("(prefers-color-scheme: dark)");
+        var prefersColor = window.matchMedia("(prefers-color-scheme: light)");
+        var prefersColorNS = window.matchMedia("(prefers-color-scheme: no-preference)")
 
         if (prefersColor.matches){
-          document.querySelector("body").className = "";
-        } else {
           document.querySelector("body").className = "light_theme";
+
+        } else if (prefersColorNS.matches) {
+          document.querySelector("body").className = "med_theme";
+
         }
+        
     </script>
     <div id="content">
       <div class="home-main-content">
