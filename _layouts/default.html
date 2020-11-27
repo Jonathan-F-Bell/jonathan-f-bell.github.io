@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Favicon Code-->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#8e8e93">
+    <meta name="msapplication-TileColor" content="#4c4a48">
+    <meta name="theme-color" content="#000000">
+
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/dark.css">
+    <link rel="stylesheet" type="text/css" href="css/med.css">
+    <link rel="stylesheet" type="text/css" href="css/light.css">
+    <link rel="stylesheet" type="text/css" href="css/md_breakpoint.css">
+    <link rel="stylesheet" type="text/css" href="css/lg_breakpoint.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+    <title>{{ page.title }}</title>
+    <meta name="Description" content="The personal website and portfolio of Jonathan Bell. Jonathan Bell is a design major at Northeastern University with a focus on web design and development.">
+  </head>
+
+  <body class="">
+    <script>
+
+        var prefersColor = window.matchMedia("(prefers-color-scheme: light)");
+        var prefersColorNS = window.matchMedia("(prefers-color-scheme: no-preference)")
+
+        if (prefersColor.matches){
+          document.querySelector("body").className = "light_theme";
+
+        } else if (prefersColorNS.matches) {
+          document.querySelector("body").className = "med_theme";
+
+        }
+        
+    </script>
+    
+    {{ content }}
+  
+    <div class="color-buttons" hidden>
+      <div class="circle-button" id="dark-mode-button"></div>
+      <div class="circle-button" id="med-mode-button"></div>
+      <div class="circle-button" id="light-mode-button"></div>
+
+    </div>
+    <script>
+      document.querySelector(".color-buttons").hidden = false;
+    </script>
+
+  </body>
+  <script src="js/main.js"></script>
+  <script src="js/blazy.min.js"></script>
+    <script>
+        ;(function() {
+            // Initialize
+            var bLazy = new Blazy();
+        })();
+    </script>
+
+</html>

@@ -1,42 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!--Favicon Code-->
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    <link rel="manifest" href="site.webmanifest">
-    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#8e8e93">
-    <meta name="msapplication-TileColor" content="#4c4a48">
-    <meta name="theme-color" content="#000000">
+---
+layout: default
+title: Jonathan Bell
+---
 
-    <link rel="stylesheet" type="text/css" href="css/main.css">
-    <link rel="stylesheet" type="text/css" href="css/dark.css">
-    <link rel="stylesheet" type="text/css" href="css/med.css">
-    <link rel="stylesheet" type="text/css" href="css/light.css">
-    <link rel="stylesheet" type="text/css" href="css/md_breakpoint.css">
-    <link rel="stylesheet" type="text/css" href="css/lg_breakpoint.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
-    <title>Jonathan Bell</title>
-    <meta name="Description" content="The personal website and portfolio of Jonathan Bell. Jonathan Bell is a design major at Northeastern University with a focus on web design and development.">
-  </head>
-
-  <body class="">
-    <script>
-
-        var prefersColor = window.matchMedia("(prefers-color-scheme: light)");
-        var prefersColorNS = window.matchMedia("(prefers-color-scheme: no-preference)")
-
-        if (prefersColor.matches){
-          document.querySelector("body").className = "light_theme";
-
-        } else if (prefersColorNS.matches) {
-          document.querySelector("body").className = "med_theme";
-
-        }
-        
-    </script>
     <div id="content">
       <div class="home-main-content">
         <h1 class="home-main-header">Jonathan Bell</h1>
@@ -77,80 +43,20 @@
     <!--start next section here. Lazy load images using bLazy      See if you can slide resume in from side without reloading page - just put it on top of current page-->
     <div id="portfolio">
       <div class="portfolio-container">
-        <!-- Portfolio Item 1 -->
+        {% for post in site.posts %}
         <div class="portfolio-item">
           <div class="portfolio-dot"></div>
-          <h2>Northeastern Pep Band Website</h2>
+          <h2>{{ post.title }}</h2>
           <noscript><p>Enable Javascript to view full resolution image</p></noscript>
-          <img class="b-lazy" src="img/placeholder/placeholder_pep_site_header.png"
-          data-src="full_size_img/pep_site_header.png" alt="Pep band website header screenshot">
+          <img class="b-lazy" src="{{ post.placeholder_image }}"
+          data-src="{{ post.full_size_image }}" alt="{{ img_alt_text }}">
           <div>
             <h3>About</h3>
-            <p>This project was a full redesign of the website for the Northeastern Pep Band.</p>
-            <p>The site has two main functions.
-            It's first and most important purpose is to draw in potential new members, provide them with any information they may be interested in, and tell them how to join.
-            It's secondary purpose is to host various content that is regularly accessed by current members such as various forms, information about membership requirements, and a calendar of events.
-            The site runs on Wordpress and is based on the Sydney theme by aThemes.</p>
-            <p>The layout, content, logos, and graphics were all created by me, following the design guidelines of Northeastern Athletics.
-            The site was also set up to be easily editable by others, as it has now passed from me to the next webmaster of the pep band.
-            </p>
-            <a href="https://web.northeastern.edu/pepband/" target="_blank" rel="noopener"><h3>Live Site</h3></a>
+            {{ post.content }}
+            <a href="{{ post.download_link_url }}" target="_blank" rel="noopener"><h3>{{ post.download_link_text }}</h3></a>
           </div>
         </div>
-
-        <!-- Portfolio Item 2 -->
-        <div class="portfolio-item">
-          <div class="portfolio-dot"></div>
-          <h2>Personal Website</h2>
-          <noscript><p>Enable Javascript to view full resolution image</p></noscript>
-          <img class="b-lazy" src="img/placeholder/placeholder_personal_site.png"
-          data-src="full_size_img/personal_site.png" alt="Personal website header screenshot">
-          <div>
-            <h3>About</h3>
-            <p>The website you're on right now!</p>
-            <p>I built this site from scratch using HTML, CSS, and Javascript.</p>
-            <p>The site is designed to be lightweight, fully responsive, and accessible.
-              It will respond to any display size, has 3 color themes which follow the theme of the user's system, obeys the reduce motion setting, has fallbacks in place for when javascript is disabled,
-              and is fully tab navigable.</p>
-
-            <p>The site earns 100/100 in performance, accessibility, best practices, and SEO from Google's Lighthouse audit.</p>
-            <a href="https://github.com/Jonathan-F-Bell/jonathan-f-bell.github.io" target="_blank" rel="noopener"><h3>Source Code</h3></a>
-          </div>
-        </div>
-
-        <!-- Portfolio Item 3 -->
-        <div class="portfolio-item">
-          <div class="portfolio-dot"></div>
-          <h2>Graphic Design 1 Process Book</h2>
-          <noscript><p>Enable Javascript to view full resolution image</p></noscript>
-          <img class="b-lazy" src="img/placeholder/placeholder_gd1_process_book.png"
-          data-src="full_size_img/gd1_process_book.png" alt="A page from my graphic design 1 process book. See the full file for all content">
-          <div>
-            <h3>About</h3>
-            <p>Process book showing my projects from Graphic Design 1 including my process and the final result</p>
-            <p>The full PDF is available below. Full versions of the work featured in this book available on request.</p>
-            <a href="files/JonathanBell_GD1_ProcessBook.pdf" target="_blank"><h3>Download PDF</h3></a>
-          </div>
-        </div>
-
-        <!-- Portfolio Item 4 -->
-        <div class="portfolio-item">
-          <div class="portfolio-dot"></div>
-          <h2>Interaction Design 1 Project</h2>
-          <noscript><p>Enable Javascript to view full resolution image</p></noscript>
-          <img class="b-lazy" src="img/placeholder/placeholder_id1_header.png"
-          data-src="full_size_img/id1_header.png" alt="A screenshot of the header of the landing page of the project.">
-          <div>
-            <h3>About</h3>
-            <p>In Interaction Design 1 we took a web based project through the stages of design, from conception to a high fidelity prototype</p>
-            <p>My project, Kin, was a chat client for families.</p>
-            <p>Below is a PDF of the final presentation I gave for this project. Interactive Adobe XD prototypes and further process documentation available on request.</p>
-            <a href="files/JonathanBell_ID1_Final.pdf" target="_blank"><h3>Download PDF</h3></a>
-          </div>
-        </div>
-
-
-
+        {% endfor %}
         <!-- Ending circle -->
         <div class="portfolio-item">
           &nbsp;
@@ -158,26 +64,3 @@
         </div>
       </div>
     </div>
-
-
-    <div class="color-buttons" hidden>
-      <div class="circle-button" id="dark-mode-button"></div>
-      <div class="circle-button" id="med-mode-button"></div>
-      <div class="circle-button" id="light-mode-button"></div>
-
-    </div>
-    <script>
-      document.querySelector(".color-buttons").hidden = false;
-    </script>
-
-  </body>
-  <script src="js/main.js"></script>
-  <script src="js/blazy.min.js"></script>
-    <script>
-        ;(function() {
-            // Initialize
-            var bLazy = new Blazy();
-        })();
-    </script>
-
-</html>
