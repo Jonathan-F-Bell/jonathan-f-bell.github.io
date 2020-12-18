@@ -38,6 +38,6 @@ body.light_theme {
   filter: invert(1);
 }
 
-.light_theme .resume-close-button img {
-  filter: invert(1);
+.light_theme .side-nav-button {
+  border-left-color: #000000;
 }

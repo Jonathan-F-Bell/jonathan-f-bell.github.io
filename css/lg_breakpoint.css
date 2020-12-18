@@ -25,27 +25,13 @@
     height: 1.8vw;
   }
 
-  .resume-nav-button {
+  .side-nav-button {
     right: 10px;
   }
 
   .portfolio-nav-button {
     bottom: 10px;
   }
-
-  .resume-close-button {
-    font-size: 22px;
-  }
-
-  .resume-close-button img {
-    height: 1.8vw;
-  }
-
-  /* Uncomment this if you want different size resume for breakpoint
-  #resume {
-    width: 30%;
-  }
-  */
 
   .portfolio-item {
     padding-left: 2em;

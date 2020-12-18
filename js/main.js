@@ -1,19 +1,9 @@
-var resumeButton = document.querySelector(".resume-nav-button a");
-var closeButton = document.querySelector(".resume-close-button a");
-var resumeSection = document.querySelector("#resume");
 var body = document.querySelector("body");
-var html = document.querySelector("html");
-var links = document.getElementsByTagName("a");
-var resumeLinks = document.querySelectorAll("#resume a");
-var resumeOpen = 0;
 
 var darkButton = document.getElementById("dark-mode-button");
 var medButton = document.getElementById("med-mode-button");
 var lightButton = document.getElementById("light-mode-button");
 
-
-resumeButton.addEventListener("click", toggleResume);
-closeButton.addEventListener("click", toggleResume);
 
 darkButton.addEventListener("click", function() {colorMode(0) });
 medButton.addEventListener("click", function() {colorMode(1) });
@@ -21,31 +11,6 @@ lightButton.addEventListener("click", function() {colorMode(2) });
 
 prefersColor.addListener(updateColor);
 
-function toggleResume() {
-    if (resumeOpen == 0) {
-        body.style.overflow = "hidden";
-        html.style.overflow = "hidden"
-        resumeSection.style.width = "100%";
-        for (var i = 0; i < links.length; i++) {
-            links[i].tabIndex = -1;
-        }
-        for (var i = 0; i < resumeLinks.length; i++) {
-            resumeLinks[i].tabIndex = 0;
-        }
-        resumeOpen = 1;
-    } else {
-        body.style.overflow = "";
-        html.style.overflow = "";
-        resumeSection.style.width = "0px";
-        for (var i = 0; i < links.length; i++) {
-            links[i].tabIndex = 0;
-        }
-        for (var i = 0; i < resumeLinks.length; i++) {
-            resumeLinks[i].tabIndex = -1;
-        }
-        resumeOpen = 0;
-    }
-}
 
 /**
  * Sets the color mode based on the given number

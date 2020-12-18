@@ -33,3 +33,7 @@ body.med_theme{
   border: 4px solid #ffffff;
   background-color: #151F27;
 }
+
+.med_theme .side-nav-button {
+  border-left-color: #ffffff;
+}

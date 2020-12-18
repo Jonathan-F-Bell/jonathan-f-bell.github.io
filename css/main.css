@@ -77,8 +77,11 @@ h6.home-subitem {
   top: 0.5vw;
 }
 
-.resume-nav-button {
+.side-nav-button {
   right: 4vw;
+  border-left-style: solid;
+  border-left-width: 1px;
+  padding-left: 15px;
 }
 
 .portfolio-nav-button {
@@ -103,41 +106,6 @@ h6.home-subitem {
   width: 30px;
   height: 30px;
   margin: 5px;
-}
-
-/* Resume Section CSS */
-
-#resume {
-  position: absolute;
-  top: 0;
-  right: 0;
-  min-height: 100vh;
-  z-index: 2;
-  width: 0px;
-  transition: width 0.3s;
-  overflow: hidden;
-}
-
-.resume-close-button {
-  font-size: 7vw;
-  font-weight: 800;
-  margin: 20px;
-}
-
-.resume-close-button img {
-  height: 6vw;
-  position: relative;
-  top: 0.5vw;
-  transform: rotate(180deg);
-}
-
-.resume-download {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  width: 80vw;
-  text-align: center;
 }
 
 /* Portfolio CSS */

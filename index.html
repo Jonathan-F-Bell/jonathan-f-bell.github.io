@@ -12,16 +12,10 @@ title: Jonathan Bell
         <h6 class="home-subitem">Maker</h6>
       </div>
       <div class="home-nav-items">
-        <div class="resume-nav-button">
-          <a href="files/JonathanBell_Resume.pdf" target="_blank"><span>Resume<img src="icons/right_arrow.svg" alt="right arrow icon"></span></a>
+        <div class="side-nav-button">
+          <p><a href="files/JonathanBell_Resume.pdf" target="_blank">Resume</a></p>
+          <p><a href="">Link 2</a></p>
         </div>
-        <!-- This script changes the download above to #content, since we can do the slide out when javascript is enabled -->
-        <script>
-          var a = document.querySelector(".resume-nav-button a")
-          a.href = "#content";
-          a.target="";
-        </script>
-
         
         <div class="portfolio-nav-button">
             <a href="#portfolio"><span>Portfolio </br><img src="icons/right_arrow.svg" alt="right arrow icon"></span></a>
@@ -29,18 +23,8 @@ title: Jonathan Bell
       </div>
     </div>
 
-    <!-- Resume Section - Need to fix scrolling on mobile -->
-    <div id="resume">
-      <div class="resume-close-button">
-          <a href="#" tabindex="-1"><span><img src="icons/right_arrow.svg" alt="right arrow icon">Back</span></a>
-      </div>
 
-      <div class="resume-download">
-        <h2><a href="files/JonathanBell_Resume.pdf" target="_blank" tabindex="-1">Download Resume</a></h2>
-      </div>
-    </div>
-
-    <!--start next section here. Lazy load images using bLazy      See if you can slide resume in from side without reloading page - just put it on top of current page-->
+    <!-- Portfolio Section -->
     <div id="portfolio">
       <div class="portfolio-container">
         {% for post in site.posts %}

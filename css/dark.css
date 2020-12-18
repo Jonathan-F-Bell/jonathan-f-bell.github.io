@@ -33,3 +33,7 @@ p, a, h1, h2, h3, h4, h5, h6, span {
   border: 4px solid #ffffff;
   background-color: #000000;
 }
+
+.side-nav-button {
+  border-left-color: #ffffff;
+}
