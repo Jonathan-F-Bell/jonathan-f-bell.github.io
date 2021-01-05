@@ -61,13 +61,13 @@ h6.home-subitem {
   left: 0;
   bottom: 0;
   width: 100%;
-  height: 20vh;
+  height: 50vh;
   min-height: 30vw;
 }
 
 .home-nav-items div {
-  font-size: 7vw;
-  font-weight: 800;
+  font-size: 5vw;
+  font-weight: 400;
   position: absolute;
 }
 
@@ -77,8 +77,29 @@ h6.home-subitem {
   top: 0.5vw;
 }
 
-.resume-nav-button {
+.home-nav-items a span {
+  text-decoration: none;
+  border-bottom: 2px solid;
+  display: inline-block;
+  line-height: 0.85;
+  transition: border-bottom-color 0.3s, text-shadow 0.3s;
+}
+
+.side-nav-button {
   right: 4vw;
+  border-left-style: solid;
+  border-left-width: 1px;
+  padding-left: 15px;
+  padding-right: 0px;
+  transform: translateY(-50%);
+}
+
+.side-nav-button p:first-child {
+  margin-top: 0;
+}
+
+.side-nav-button p:last-child {
+  margin-bottom: 0;
 }
 
 .portfolio-nav-button {
@@ -90,6 +111,16 @@ h6.home-subitem {
 
 .portfolio-nav-button img {
   transform: rotate(90deg);
+  opacity: 50%;
+  transition: opacity 0.3s;
+}
+
+.portfolio-nav-button a:hover img {
+  opacity: 100%;
+}
+
+.portfolio-nav-button p {
+  margin: 0;
 }
 
 .color-buttons {
@@ -103,41 +134,7 @@ h6.home-subitem {
   width: 30px;
   height: 30px;
   margin: 5px;
-}
-
-/* Resume Section CSS */
-
-#resume {
-  position: absolute;
-  top: 0;
-  right: 0;
-  min-height: 100vh;
-  z-index: 2;
-  width: 0px;
-  transition: width 0.3s;
-  overflow: hidden;
-}
-
-.resume-close-button {
-  font-size: 7vw;
-  font-weight: 800;
-  margin: 20px;
-}
-
-.resume-close-button img {
-  height: 6vw;
-  position: relative;
-  top: 0.5vw;
-  transform: rotate(180deg);
-}
-
-.resume-download {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  width: 80vw;
-  text-align: center;
+  transition: border-color 0.3s;
 }
 
 /* Portfolio CSS */

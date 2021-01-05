@@ -20,9 +20,17 @@ p, a, h1, h2, h3, h4, h5, h6, span {
   border: 4px solid #000000;
 }
 
+#med-mode-button:hover {
+  border-color: #666666;
+}
+
 #light-mode-button {
   background-color: #ffffff;
   border: 4px solid #000000;
+}
+
+#light-mode-button:hover {
+  border-color: #666666;
 }
 
 .portfolio-container {
@@ -32,4 +40,21 @@ p, a, h1, h2, h3, h4, h5, h6, span {
 .portfolio-dot {
   border: 4px solid #ffffff;
   background-color: #000000;
+}
+
+.side-nav-button {
+  border-left-color: #ffffff;
+}
+
+.home-nav-items a span {
+  border-bottom-color: rgba(255, 255, 255, 0.5);
+  text-shadow:
+    -1px 1px #000000,
+    1px -1px #000000,
+    -1px -1px #000000,
+    1px 1px #000000;
+}
+
+.home-nav-items a:hover span {
+  border-bottom-color: rgba(255, 255, 255, 1);
 }
