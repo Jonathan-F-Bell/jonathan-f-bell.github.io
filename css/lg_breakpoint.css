@@ -14,7 +14,9 @@
   }
 
   h6.home-subitem {
-    font-size: 3.5vw;
+    font-size: 5vw;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
   }
 
   .home-nav-items div {
@@ -27,6 +29,7 @@
 
   .side-nav-button {
     right: 10px;
+    padding-right: 5px;
   }
 
   .portfolio-nav-button {

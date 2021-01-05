@@ -15,9 +15,17 @@ body.light_theme {
   border: 4px solid #ffffff;
 }
 
+.light_theme #dark-mode-button:hover {
+  border-color: #999999;
+}
+
 .light_theme #med-mode-button {
   background-color: #151F27;
   border: 4px solid #ffffff;
+}
+
+.light_theme #med-mode-button:hover {
+  border-color: #999999;
 }
 
 .light_theme #light-mode-button {
@@ -40,4 +48,18 @@ body.light_theme {
 
 .light_theme .side-nav-button {
   border-left-color: #000000;
+}
+
+.light_theme .home-nav-items a span {
+  border-bottom-color: rgba(0, 0, 0, 0.5);
+  text-shadow:
+    -1px 1px #ffffff,
+    1px -1px #ffffff,
+    -1px -1px #ffffff,
+    1px 1px #ffffff;
+}
+
+
+.light_theme .home-nav-items a:hover span {
+  border-bottom-color: rgba(0, 0, 0, 1);
 }
